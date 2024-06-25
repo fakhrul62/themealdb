@@ -1,15 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Meal DB</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.8/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!-- hero -->
+    <section id="hero" class="bg-[url('/assets/images/hero.jpg')] bg-cover bg-no-repeat py-10 h-screen bg-fixed">
+        <div class="container">
+            <div class="pb-5">
+                <a href="index.html" class="logo text-5xl font-bold">Mealicious</a>
+            </div>
+            <div class="hero-text pt-[12.5rem]">
+                <h3 class="font-extrabold text-3xl uppercase text-[#222222]">Hungry?</h3>
+                <h1 class="font-black text-8xl uppercase text-[#222222]">Make your <br>Own Meal</h1>
+            </div>
+        </div>
+    </section>
+    <!-- nav -->
+    <section id="nav" class="bg-[#12372A] sticky top-0 border-b border-gray-300 border-solid z-10">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>Foods</a></li>
+                        <li><a>Drinks</a></li>
+                        <li><a>Dessert</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    
+                    <a href="index.html" class="logo text-5xl font-bold text-white">Mealicious</a>
+                </div>
+                <div class="navbar-end">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>About</a></li>
+                        <li><a>Categories</a></li>
+                        <li><a>Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Slider -->
+     <section id="infinite">
+        <div class="slider">
+            <div class="slide-track *:flex *:items-center *:justify-center">
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">indian</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">thai</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">russian</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">chinese</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">japanese</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">turkish</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">indian</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">thai</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">russian</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">chinese</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">japanese</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">turkish</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">indian</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">thai</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">russian</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">chinese</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">japanese</h3></div>
+                <div class="slide"><h3 class="text-white font-light uppercase text-base tracking-widest">turkish</h3></div>
 
+            </div>
+        </div>
+     </section>
+    <!-- categories -->
+    <section id="categories" class="py-28">
+        <div class="container">
+            <h3 class="sub-header pb-10">Categories</h3>
+            <div class="grid grid-cols-4 gap-5">
+                <div class="rounded-lg border-solid border border-zinc-300 text-center flex flex-col justify-center items-center py-5 gap-5">
+                    <img src="assets/images/beef.png" class="h-36 object-contain">
+                    <h4 class="text-xl font-base">Beef</h4>
+                </div>
+                <div class="rounded-lg border-solid border border-zinc-300 text-center flex flex-col justify-center items-center py-5 gap-5">
+                    <img src="assets/images/chicken.png" class="h-36 object-contain">
+                    <h4 class="text-xl font-base">Chicken</h4>
+                </div>
+                <div class="rounded-lg border-solid border border-zinc-300 text-center flex flex-col justify-center items-center py-5 gap-5">
+                    <img src="assets/images/dessert.png" class="h-36 object-contain">
+                    <h4 class="text-xl font-base">Dessert</h4>
+                </div>
+                <div class="rounded-lg border-solid border border-zinc-300 text-center flex flex-col justify-center items-center py-5 gap-5">
+                    <img src="assets/images/starter.png" class="h-36 object-contain">
+                    <h4 class="text-xl font-base">Starter</h4>
+                </div>
+            </div>
+            <div class="py-5 text-center">
+                <button class="btn bg-[#12372A] text-white border-[#12372A] hover:text-[#12372A] hover:border hover:border-solid hover:border-[#12372A] px-12 tracking-widest uppercase">Show All</button>
+            </div>
+            
+        </div>
+    </section>
+    <!-- search -->
+     <section id="search" class="bg-[url('/assets/images/search.jpg')] bg-cover bg-bottom bg-no-repeat h-screen">
+        <div class="">
+            <div class="container">
+                <div class="grid justify-end items-center h-svh">
+                    
+                    <div class="text-center">
+                        <h3 class="font-light text-8xl cursy text-[#222] capitalize">Have a Dish <br> on mind?</h3>
+                        <button class="btn bg-[#12372A] text-white border-[#12372A] hover:text-[#12372A] hover:border hover:border-solid hover:border-[#12372A] px-12 tracking-widest uppercase">Search it</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+     </section>
+   
+<div class="py-96"></div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
