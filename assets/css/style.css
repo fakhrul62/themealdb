@@ -107,3 +107,76 @@ a {
     background-color: rgba(0, 0, 0, 0.648);
     z-index: 1;
 }
+
+/* around the world */
+.slick-prev{
+    position: absolute;
+    bottom: -60px;
+    right: 87px;
+}
+
+.slick-next{
+    position: absolute;
+    bottom: -60px;
+    right: 37px;
+}
+
+/* form */
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #222;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input,
+  .login-box .user-box textarea {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #222;
+    border: 1px solid #555;
+    outline: none;
+    background: transparent;
+    border-radius: 15px;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 16px;
+    color: #222;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box textarea:focus ~ label,
+  .login-box .user-box input:valid ~ label,
+  .login-box .user-box textarea:valid ~ label {
+    top: -12px;
+    left: 18px;
+    padding: 5px;
+    background: #fff;
+    color: #12372A;
+    font-size: 13px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #12372A;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
