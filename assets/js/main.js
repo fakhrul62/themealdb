@@ -13,8 +13,8 @@
 $('.around-slider').slick({
     dots: false,
     infinite: true,
-    prevArrow: '<button type="button" class="slick-prev text-lg hover:bg-[#12372A] border border-[#12372A] rounded h-7 w-10 leading-[50%] bg-white hover:text-white"><i class="fa-sharp fa-light fa-arrow-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next text-lg hover:bg-[#12372A] border border-[#12372A] rounded h-7 w-10 leading-[50%] bg-white hover:text-white"><i class="fa-sharp fa-light fa-arrow-right"></i></button>',
+    prevArrow: '<button type="button" class="slick-prev text-lg hover:bg-[#12372A] border border-[#12372A] rounded h-7 w-10 leading-[50%] bg-white hover:text-white"><i class="fa-light fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next text-lg hover:bg-[#12372A] border border-[#12372A] rounded h-7 w-10 leading-[50%] bg-white hover:text-white"><i class="fa-light fa-arrow-right"></i></button>',
     speed: 1000,
     autoplay: true,
     slidesToShow: 1,

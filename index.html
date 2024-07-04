@@ -9,8 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://fakhrul62.github.io/icons/css/all.css">
     <link rel="stylesheet" href="https://fakhrul62.github.io/icons/css/fontawesome.css">
-    <link rel="stylesheet" href="https://fakhrul62.github.io/icons/css/sharp-light.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -21,14 +21,15 @@
             <div class="pb-5">
                 <a href="index.html" class="logo text-5xl font-bold">Mealicious</a>
             </div>
-            <div class="hero-text pt-[12.5rem]">
+            <div class="hero-text 2xl:pt-[12.5rem] pt-5">
                 <h3 class="font-extrabold text-3xl uppercase text-[#222222]">Hungry?</h3>
                 <h1 class="font-black text-8xl uppercase text-[#222222]">Make your <br>Own Meal</h1>
             </div>
         </div>
     </section>
     <!-- nav -->
-    <section id="nav" class="bg-[#12372A] sticky top-0 border-b border-gray-300 border-solid z-10">
+    <section id="nav"
+        class="bg-[#12372A] sticky top-0 border-b border-gray-300 border-solid z-10 2xl:block xl:block lg:block hidden">
         <div class="container">
             <div class="navbar">
                 <div class="navbar-start">
@@ -52,6 +53,54 @@
             </div>
         </div>
     </section>
+    <!-- nav -->
+    <section id="mobile-nav"
+        class="bg-[#12372A] sticky top-0 border-b border-gray-300 border-solid z-10 2xl:hidden xl:hidden lg:hidden">
+        <div class="">
+
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <i class="fa-solid fa-bars-sort text-white"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li class="hover:-translate-y-0.5"><a>Foods</a></li>
+                            <li class="hover:-translate-y-0.5"><a>Drinks</a></li>
+                            <li class="hover:-translate-y-0.5"><a>Dessert</a></li>
+                            <li class="hover:-translate-y-0.5"><a>About</a></li>
+                            <li class="hover:-translate-y-0.5"><a>Categories</a></li>
+                            <li class="hover:-translate-y-0.5"><a>Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a href="index.html" class="logo text-2xl font-bold text-white">Mealicious</a>
+                </div>
+                <div class="navbar-end">
+                    <!-- <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Slider -->
     <section id="infinite">
         <div class="slider">
@@ -118,7 +167,7 @@
     <section id="categories" class="py-28">
         <div class="container">
             <h3 class="sub-header pb-10">Categories</h3>
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid 2xl:grid-cols-4 gap-5 grid-cols-1">
                 <div
                     class="rounded-lg border-solid border border-zinc-300 text-center flex flex-col justify-center items-center py-5 gap-5">
                     <img src="assets/images/beef.png" class="h-36 object-contain">
@@ -171,7 +220,7 @@
             <h4 class="text-4xl  font-extrabold tracking-widest text-[#222] uppercase text-center mt-10 mb-16">foods
                 around the world</h4>
             <div class="around-slider relative">
-                <div class="p-20 bg-gray-200 rounded-xl !grid !grid-cols-[50%_50%] mx-10">
+                <div class="2xl:p-20 p-5 bg-gray-200 rounded-xl !grid 2xl:!grid-cols-2 !grid-cols-1 2xl:mx-10 mx-1">
                     <div>
                         <h4 class="font-semibold text-[#12372A] tracking-wide">Pakistani</h4>
                         <h2 class="text-[#222] font-bold text-3xl uppercase my-3">Afgani Jalebi</h2>
@@ -185,7 +234,7 @@
                         <img src="assets/images/chicken.png" alt="" srcset="">
                     </div>
                 </div>
-                <div class="p-20 bg-gray-200 rounded-xl !grid !grid-cols-[50%_50%] mx-10">
+                <div class="2xl:p-20 p-5 bg-gray-200 rounded-xl !grid 2xl:!grid-cols-2 !grid-cols-1 2xl:mx-10 mx-1">
                     <div>
                         <h4 class="font-semibold text-[#12372A] tracking-wide">Pakistani</h4>
                         <h2 class="text-[#222] font-bold text-3xl uppercase my-3">Afgani Jalebi</h2>
@@ -199,7 +248,7 @@
                         <img src="assets/images/chicken.png" alt="" srcset="">
                     </div>
                 </div>
-                <div class="p-20 bg-gray-200 rounded-xl !grid !grid-cols-[50%_50%] mx-10">
+                <div class="2xl:p-20 p-5 bg-gray-200 rounded-xl !grid 2xl:!grid-cols-2 !grid-cols-1 2xl:mx-10 mx-1">
                     <div>
                         <h4 class="font-semibold text-[#12372A] tracking-wide">Pakistani</h4>
                         <h2 class="text-[#222] font-bold text-3xl uppercase my-3">Afgani Jalebi</h2>
@@ -213,7 +262,7 @@
                         <img src="assets/images/chicken.png" alt="" srcset="">
                     </div>
                 </div>
-                <div class="p-20 bg-gray-200 rounded-xl !grid !grid-cols-[50%_50%] mx-10">
+                <div class="2xl:p-20 p-5 bg-gray-200 rounded-xl !grid 2xl:!grid-cols-2 !grid-cols-1 2xl:mx-10 mx-1">
                     <div>
                         <h4 class="font-semibold text-[#12372A] tracking-wide">Pakistani</h4>
                         <h2 class="text-[#222] font-bold text-3xl uppercase my-3">Afgani Jalebi</h2>
@@ -245,10 +294,12 @@
                     </div>
                     <button
                         class="btn bg-[#12372A] text-white border-[#12372A] hover:text-[#12372A] hover:border hover:border-solid hover:border-[#12372A] px-12 tracking-widest uppercase mt-7">generate
-                        <i class="fa-sharp fa-light fa-shuffle"></i></button>
+                        <i class="fa-solid fa-shuffle"></i></button>
                 </div>
                 <div class="flex justify-center items-center">
-                    <h2 class="text-white font-extrabold text-7xl uppercase tracking-wider">Wanna eat something but
+                    <h2
+                        class="text-white font-extrabold 2xl:text-7xl xl:text-6xl lg:text-5xl text-lg uppercase tracking-wider">
+                        Wanna eat something but
                         can't decide?</h2>
                 </div>
             </div>
@@ -258,7 +309,7 @@
     <!-- footer -->
     <section id="footer" class="bg-[url('assets/images/footer-bg.png')] bg-cover bg-no-repeat py-10">
         <div class="container">
-            <div class="grid grid-cols-[50%_40%] gap-[10%]">
+            <div class="grid 2xl:grid-cols-[50%_40%] 2xl:gap-[10%] grid-cols-1">
                 <div>
                     <h3 class="font-extrabold text-7xl uppercase text-[#12372A]">share your recipe with us </h3>
                 </div>
@@ -282,29 +333,36 @@
                                 <label>Recipe Name</label>
                             </div>
                             <div class="user-box col-span-2">
-                                <textarea  type="text" name="" required="" class=""></textarea>
+                                <textarea type="text" name="" required="" class=""></textarea>
                                 <label>Recipe details</label>
                             </div>
                         </div>
                         <button
-                        class="btn bg-[#12372A] rounded-2xl text-white border-[#12372A] hover:text-[#12372A] hover:border hover:border-solid hover:border-[#12372A] px-12 tracking-widest uppercase mt-7">Submit
-                        <i class="fa-sharp fa-light fa-send"></i></button>
-
+                            class="btn bg-[#12372A] rounded-2xl text-white border-[#12372A] hover:text-[#12372A] hover:border hover:border-solid hover:border-[#12372A] px-12 tracking-widest uppercase mt-7">Submit
+                            <i class="fa-light fa-send"></i></button>
                     </form>
                 </div>
             </div>
+            <div class="py-32"></div>
+            <div class="text-center">
+                <a href="index.html"
+                    class="logo 2xl:text-9xl xl:text-8xl lg:text-lg md:text-base sm:text-sm:text-base font-bold text-[#12372A]">Mealicious</a>
+                <p>© 2024 Mealicious</p>
+            </div>
         </div>
     </section>
-    <div class="py-96"></div>
 
 
     <!-- Scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="https://fakhrul62.github.io/icons/js/fontawesome.js"></script>
-    <script src="https://fakhrul62.github.io/icons/js/sharp-light.js"></script>
+    <script src="https://fakhrul62.github.io/icons/js/all.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
 </body>
 
 </html>
